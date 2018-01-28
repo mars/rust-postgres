@@ -49,6 +49,17 @@
 //!
 //! ## Examples
 //!
+//! Enabling the `with-native-tls` feature in `Cargo.toml`:
+//!
+//! ```no_run
+//! [dependencies]
+//! native-tls = "0.1.5"
+//! 
+//! [dependencies.postgres]
+//! version = "0.15.1"
+//! features = ["with-native-tls"]
+//! ```
+//!
 //! Connecting using `native-tls`:
 //!
 //! ```no_run
