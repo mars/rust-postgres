@@ -304,6 +304,19 @@ crate.
 
 ## Optional features
 
+Using [Cargo features](https://doc.rust-lang.org/cargo/reference/manifest.html#the-features-section), this crate may be configured to include optional features.
+
+For example, to enable UUID type, add the following to `Cargo.toml`:
+
+```toml
+[dependencies]
+uuid = "0.5"
+
+[dependencies.postgres]
+version = "0.15.1"
+features = ["with-uuid"]
+```
+
 ### UUID type
 
 [UUID](http://www.postgresql.org/docs/9.4/static/datatype-uuid.html) support is
